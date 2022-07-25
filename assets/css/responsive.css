@@ -339,6 +339,9 @@
     .header-search-body.stick-search {
         top: 73px;
     }
+    .cart-wrap-no__item {
+        right: -95px;
+    }
 }
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
