@@ -51,7 +51,7 @@
     .side-bar {
         display: block;
     }
-    .modal-body {
+    .form  {
         overflow-y: scroll;
     }
 
