@@ -51,6 +51,9 @@
     .side-bar {
         display: block;
     }
+    .modal-body {
+        overflow-y: scroll;
+    }
 
 }
 /* Tablet*/
