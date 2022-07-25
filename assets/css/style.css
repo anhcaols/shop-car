@@ -1636,7 +1636,6 @@
     bottom: 0;
     right: 0;
     left: 0;
-    overflow: scroll;
     visibility: hidden;
 }
 .modal-wrapper.show {
@@ -1658,7 +1657,6 @@
     display: flex;
     justify-content: center;
     position: relative; 
-    overflow: scroll;
 }
 
 .form {
