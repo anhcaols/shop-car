@@ -335,6 +335,9 @@
     .cart-wrap-no__item {
         right: -95px;
     }
+    .form {
+        margin: 10px auto;
+    }
 }
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
