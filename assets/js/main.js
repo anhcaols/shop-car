@@ -83,7 +83,7 @@ const init = {
 function handleLogin(){
     // handle close/open
     login.addEventListener("click", () => {
-       // window.onscroll = function () { window.scrollTo(0, 0); };
+        window.onscroll = function () { window.scrollTo(0, 0); };
         modal.classList.add("show")
     })
     closeModal.addEventListener("click", () => {
