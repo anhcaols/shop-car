@@ -314,9 +314,6 @@
     .footer-main .col.l-4 {
         padding: 0 12px;
     }
-    .modal-wrapper {
-        overflow: auto;
-    }
     .form {
         max-width: 380px;
         top: 0;
