@@ -341,6 +341,10 @@
     input {
         font-size: 16px !important;
     }
+    .modal-wrapper.show {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
