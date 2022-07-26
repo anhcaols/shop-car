@@ -341,10 +341,10 @@
     input {
         font-size: 16px !important;
     }
-    .modal-wrapper.show, .modal-body {
+/*     .modal-wrapper.show, .modal-body {
         overflow-y: auto;
         overflow-x: hidden;
-    }
+    } */
 }
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
