@@ -1640,9 +1640,11 @@
     right: 0;
     left: 0;
     visibility: hidden;
+    display: none;
 }
 .modal-wrapper.show {
     visibility: visible;
+    display: block;
 }
 .modal-wrapper.show .modal-body{
     animation: fadeInModal ease 0.8s;
