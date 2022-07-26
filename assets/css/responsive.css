@@ -360,4 +360,8 @@
     .payment__img img {
         width: 225px;
     }
+    .form {
+        max-width: 308px;
+        top: 0;
+    }
 }
