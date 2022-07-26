@@ -307,6 +307,9 @@
     height: 41px;
     opacity: .23;
 }
+.header-container-wrap.stick-menu .cart-wrap{
+    top: 44px;
+}
 /* Sidebar Mobile */
 .side-bar-wrapper {
     position: fixed;
