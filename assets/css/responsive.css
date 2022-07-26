@@ -338,6 +338,9 @@
     .form {
         margin: 10px auto;
     }
+    input {
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
