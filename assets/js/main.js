@@ -2,7 +2,8 @@ const $  = document.querySelector.bind(document)
 const $$  = document.querySelectorAll.bind(document)
 
 let currentFormIndex = 0
-const login =  $(".header-top-login")
+const login =  $("#login-top")
+const register =  $("#register-top")
 const modal = $(".modal-wrapper")
 const closeModal = $(".btn-close-login")
 const modalOverlay = $(".modal__overlay")
@@ -83,18 +84,29 @@ const init = {
 function handleLogin(){
     // handle close/open
     login.addEventListener("click", () => {
-        //window.onscroll = function () { window.scrollTo(0, 0); };
         modal.classList.add("show")
+        $(".heading-login").classList.add("active")
+        $(".line-login").classList.add("active")
+        $(".login-form").classList.add("active")
+    })
+    register.addEventListener("click", () => {
+        modal.classList.add("show")
+        $(".heading-register").classList.add("active")
+        $(".line-register").classList.add("active")
+        $(".register-form").classList.add("active")
     })
     closeModal.addEventListener("click", () => {
         modal.classList.remove("show")
-        window.onscroll = function () { };
-
+        $(".heading-login").classList.remove("active")
+        $(".line-login").classList.remove("active")
+        $(".login-form").classList.remove("active")
+        $(".heading-register").classList.remove("active")
+        $(".line-register").classList.remove("active")
+        $(".register-form").classList.remove("active")
     })
-    modalOverlay.addEventListener("click", () => {
-        modal.classList.remove("show")
-        window.onscroll = function () { };
-    })
+    modalOverlay.onclick = function(){
+        closeModal.click()
+    }
     //handle change tab
     function changeTabLogin() {
         headingLogins.forEach((heading,index) => {
