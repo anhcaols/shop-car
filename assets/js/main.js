@@ -142,21 +142,37 @@ function handleSearch(){
 }
 function handleSelectForm(){
     formSelects.forEach((formSelect, index) => {
-        formSelect.addEventListener("click", function()  {
-            // let formActive = document.getElementsByClassName("form-select-list show")
-            // let formWrapActive = document.getElementsByClassName("form-select active")
-            // if(formActive.length != 0) {
-            //     formActive[0].classList.toggle("show")
-            // }
-            // if(formWrapActive.length != 0) {
-            //     formWrapActive[0].classList.toggle("active")
-            // }
+        formSelect.addEventListener("click", function(e)  {
+            if($(".form-select-list.show")){
+                $(".form-select-list.show").classList.remove("show")
+            }
+            if($(".form-select.active") ){
+                $(".form-select.active").classList.remove("active")
+            }
+            formSelect.classList.toggle("active")
             selectLists[index].classList.toggle("show")
-            this.classList.toggle("active")
             currentFormIndex = index
         })
-        
     })
+    
+    window.onclick = function(e){
+        if(e.target.matches(".select-car-item")){
+            selectLists.forEach((selectList) => {
+                selectList.classList.remove("show")
+            })
+            formSelects.forEach((formSelect) => {
+                formSelect.classList.remove("active")
+            })
+        }
+        if(!e.target.closest(".form-select")){
+            selectLists.forEach((selectList) => {
+                selectList.classList.remove("show")
+            })
+            formSelects.forEach((formSelect) => {
+                formSelect.classList.remove("active")
+            })
+        }
+    }
     // Select Item
     selectItems.forEach((selectItem, index) => {
         selectItem.addEventListener("click", () => {
