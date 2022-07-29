@@ -11,7 +11,6 @@
         width: 1036px;
     }
 }
-}
 /* Mobile and Tablet */
 @media screen and (max-width: 1023px) {
     .navbar-wrap .navbar-wrap-list {
