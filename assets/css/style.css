@@ -450,12 +450,6 @@
     border-radius: 4px;
 }
 
-.header-cart:hover .cart-wrap {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 .social-links {
     position: relative;
     text-align: center;
