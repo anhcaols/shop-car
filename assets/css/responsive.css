@@ -11,6 +11,15 @@
         width: 1036px;
     }
 }
+/* > PC hover cart  */
+@media screen and (min-width: 1024px){
+    .header-cart:hover .cart-wrap {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
 /* Mobile and Tablet */
 @media screen and (max-width: 1023px) {
     .navbar-wrap .navbar-wrap-list {
@@ -349,6 +358,7 @@
         overflow-x: hidden;
     } */
 }
+/* Small Mobile */
 @media screen and (max-width: 375px) {
     .header-cart, .header-quote {
         display: none;
