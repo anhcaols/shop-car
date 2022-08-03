@@ -106,7 +106,6 @@
 }
 
 .header-container{
-    max-width: 1445px;
     margin: 0 69px 0px;
     display: flex;
     justify-content: space-between;
